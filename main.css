@@ -1,3 +1,7 @@
+:root{
+    --size : 16;
+}
+
 *{
     margin:0px;
     padding: 0px;
@@ -12,7 +16,6 @@
 }
 
 .container div {
-    flex: 0 0 calc(100% / 17);
+    flex: 0 0 calc(100% / var(--size));
     aspect-ratio: 1 / 1;
-    border: 1px solid #ddd;
 }
