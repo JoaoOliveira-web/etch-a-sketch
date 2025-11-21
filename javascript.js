@@ -4,6 +4,19 @@ const container = document.querySelector(".container");
 var size = 16;
 var mouse = "default";
 
+const rbg_brush = document.getElementById("rgb_brush")
+
+rbg_brush.addEventListener("click",function(){
+    mouse = "rbg";
+})
+
+const default_brush = document.getElementById("default_brush")
+
+default_brush.addEventListener("click",function(){
+    mouse = "default";
+})
+
+
 function makeGrid(size) {
     container.innerHTML = "";
 
@@ -45,14 +58,3 @@ grid_btn.addEventListener("click",function(){
     makeGrid(size);
 });
 
-const rbg_brush = document.getElementById("rbg_brush")
-
-rbg_brush.addEventListener("click",function(){
-    mouse = "rbg";
-})
-
-const default_brush = document.getElementById("default_brush")
-
-default_brush.addEventListener("click",function(){
-    mouse = "default";
-})
